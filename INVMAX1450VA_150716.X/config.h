@@ -31,10 +31,10 @@ extern "C" {
 #define VER_BETA                2
 #define VER_ALFA                3
 
-#define RELEASE_TYPE            VER_RELEASE
+#define RELEASE_TYPE            VER_BETA
 
 #define VERSION_MAJOR           1
-#define VERSION_MINOR           1
+#define VERSION_MINOR           2
 
 // 1450VA or 1800VA
 #define PRODUCT_ID_1450VA       1
