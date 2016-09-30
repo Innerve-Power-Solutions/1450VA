@@ -46,10 +46,10 @@ extern "C" {
 #include "motor_control_mapping.h"
 
 //#define DC_IN_RANGE     
-#define DC_SENSE_GAIN (float)(2.5/400) //330 V on Vdc is minimum to get 230 V on Vac , 2.07 is the minimum voltage to use control
+#define DC_SENSE_GAIN (float)(2.155/400) // According to new schematic version 1.0.3
 #define BAT_DC_GAIN (float)(3.3/16)//10.8 UVsetting worked at 10.67 V need to tune this gain
     
-#define ADC_GAIN (1024/3.3)       
+#define ADC_GAIN (1024/3.3)             // 10-bit ADC  
 #define VDC_GAIN    (float)(ADC_GAIN*DC_SENSE_GAIN) 
 #define BAT_VDC_GAIN  (float) (ADC_GAIN*BAT_DC_GAIN)
 #define INV_VDC_GAIN  (float)(1/VDC_GAIN)    
